@@ -1,0 +1,239 @@
+.contenedorDetalleProducto{
+    width: 80%;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 2%;
+}
+.contenedorImg{
+    display: inline-flex;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    
+}
+.boxImg{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width:80%;        
+    height: 80%;
+    background-size: 100% 100%;
+}
+.boxImg img{
+    position: absolute;
+    width:100%;
+    height: 100%;        
+    background-color: rgb(194, 194, 194);
+    background-size: 100% 100%;
+}
+.contenedorBoxCompra{
+    position: relative;
+    display: inline-flex;
+    width: 40%;
+    height: 100%;
+    
+}
+.boxCompra{
+    position: absolute;
+    top:3%;
+    left: 5%;
+    width: 90%;
+    height: 94%;
+    border-radius: 10px;
+    border-color: slategray;
+    border: 1px solid rgba(201, 201, 201, 0.5);
+}
+.boxForm{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+}
+.boxFormTitulo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.boxFormPrice{
+    font-size: 3em;
+    font-weight: lighter;
+}
+.boxFormButtomContenedor{
+    position: absolute;
+    bottom: 5%;
+    left: 18%;
+    width: 64%;
+    height: 50px;
+    margin: auto;
+}
+.boxFormButtomBuy{
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    border-color: transparent;
+    background-color: #3483fa;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 48px;
+    transition: 200ms;
+}
+.boxFormButtomBuy:hover{
+    background-color: #2968c8;
+    transition: 200ms;
+    cursor: pointer;
+}
+.boxFormDescription{
+    position: absolute;
+    bottom: 20%;
+}
+/* ### LOADING ### */
+.boxImgLoading{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width:80%;        
+    height: 80%;
+    background-color: rgb(194, 194, 194);
+    animation: pulse 1s infinite;
+}
+.boxCompraLoading{
+    position: absolute;
+    top:3%;
+    left: 5%;
+    width: 90%;
+    height: 94%;
+    border-radius: 10px;
+    border-color: slategray;
+    border: 1px solid rgba(201, 201, 201, 0.5);
+    animation: pulse 1s infinite;
+}
+.boxLineButtomLoading{
+    position: absolute;
+    bottom: 5%;
+    left: 18%;
+    width: 64%;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
+}
+.boxLineTituloLoading{
+    position: absolute;
+    Top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
+}
+.boxLinePriceLoading{
+    position: absolute;
+    Top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 58px;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
+}
+.iconEdit{
+    font-size: 2em;
+    position: absolute;
+    right: 2%;
+    top:1%;
+}
+.iconEdit:hover{
+    color:rgb(70, 112, 146);
+    cursor: pointer;
+}
+.iconDelete{
+    font-size: 2em;
+    position: absolute;
+    right: 12%;
+    top:1%;
+}
+.iconDelete:hover{
+    color:rgb(70, 112, 146);
+    cursor: pointer;
+}
+.boxFormEdit{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(41, 104, 200, 0.95);
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #f2f4f7;
+    -webkit-box-shadow: 2px 5px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 5px 30px -12px rgba(0,0,0,0.75);
+    box-shadow: 2px 5px 30px -12px rgba(0,0,0,0.75);
+    transition: height .5s ease;
+}
+.boxFormEdit input {
+    width: 90%;
+    height: 30px;
+    border: 1px solid rgba(177, 177, 177, 0.5);
+    border-radius: 5px;
+    text-align: center;
+}
+.boxFormEdit textarea {
+    width: 90%;
+    height: 150px;
+    border: 1px solid rgba(177, 177, 177, 0.5);
+    border-radius: 5px;
+}
+.boxFormEditContenedor{
+    z-index: 20;
+    /* background-color: rgba(194, 194, 194, 0.5); */
+}
+#submitEdit{
+    margin-top: 5%;
+    height: 48px;
+}
+.boxError{
+    position: relative;
+    margin-top: 3%;
+    background-color: rgb(241, 240, 245);
+    height: 230px;
+    padding: 10px;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 5px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 5px 30px -12px rgba(0,0,0,0.75);
+    box-shadow: 2px 5px 30px -12px rgba(0,0,0,0.75);
+}
+.boxError p {
+    margin-top: 10%;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+.boxErrorBotones{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    text-align: center;
+    width: 80%;
+    height: 120px;
+}
+.boxEliminarBoton{
+    text-align: center;
+    margin-top: 5px;
+}
+#eliminarAceptar{
+    background-color: rgb(13, 185, 99);
+}
+#eliminarAceptar:hover{
+    background-color: #2968c8;
+}
+#eliminarCancelar{
+    background-color: rgb(204, 47, 53);
+}
+#eliminarCancelar:hover{
+    background-color: #2968c8;
+}

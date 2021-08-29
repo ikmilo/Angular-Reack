@@ -1,0 +1,93 @@
+.loginContenedor {
+    margin: auto;
+    width: 500px;
+    height: 550px;
+    background-color:#f0f5f1;
+    position: relative;
+
+}
+
+.loginContenedor form {
+    position: absolute;
+    left: 15%;
+    top: 8%;
+    text-align: center;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.loginContenedor form input {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.buttomSubmit {
+    width: 95%;
+    height: 48px;
+    border-color: transparent;
+    background-color: #3483fa;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 48px;
+    transition: 200ms;
+}
+.buttomSubmit:hover{
+    transition: 300ms;
+    background-color: #2968c8;
+    cursor: pointer;
+}
+.errorAuth{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+.custom-file-input {
+    color: transparent;
+    margin: auto;
+    width: 90%;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Selecciona una Imagen';
+    color: black;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active {
+    outline: 0;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+  }
+  .focus{
+    border: solid #bb153f;
+    box-shadow: 0 0 5pt 2pt #bb153f;
+    outline-width: 0px;    
+  }
+  .focusWarning{
+    border: solid #fbff06;
+    box-shadow: 0 0 15pt 2pt #fbff06;
+    outline-width: 0px;    
+  }
+  .buttomDisble{
+    background-color: #8e97a5;
+  }
+  .buttomDisble:hover{
+    background-color: #8e97a5;
+  }

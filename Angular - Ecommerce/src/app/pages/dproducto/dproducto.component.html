@@ -1,0 +1,26 @@
+<!--<div>
+    <img src="{{producto[0].photo_url}}">
+    <div>{{producto[0].id}}</div>
+    <div>{{producto[0].name}}</div>
+    <div>{{producto[0].price | currency}}</div>
+    <div>{{producto[0].description}}</div>
+ </div>-->
+<div class="contenedorDetalleProducto">
+    <div class="contenedorImg">
+        <div class="boxImg"><img src="{{item.img}}"></div>
+    </div>
+    <div class="contenedorBoxCompra">
+        <div class="boxCompra">
+            <div class="boxForm">
+                <div class="boxFormTitulo">{{item.name}}</div><br>
+                <div class="boxFormPrice">{{item.price | currency}}</div><br>
+                <div><strong>SKU: </strong>{{item.sku}}</div><br>
+                <div><strong>ID: </strong>{{item.id}}</div>
+                <div class="boxFormDescription"><strong>Descripción</strong><br><br>{{item.description}}</div><br>
+                <div class="boxFormButtomContenedor">
+                    <button class="boxFormButtomBuy">Comprar ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

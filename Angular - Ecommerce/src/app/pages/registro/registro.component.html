@@ -1,0 +1,27 @@
+<div class="loginContenedor">
+    <form [formGroup]="myForm" (ngSubmit)="registrarse()" action="/">
+        <h1>Registro</h1>
+        <input placeholder="Nombre" type="Text" formControlName="name"
+            [ngClass]="{focus:myForm.get('name')?.errors&& myForm.get('name')?.dirty}"
+        ><br>
+        <input placeholder="Apellido" type="Text" formControlName="lastname"
+            [ngClass]="{focus:myForm.get('lastname')?.errors&& myForm.get('lastname')?.dirty}"
+        ><br>
+        <input placeholder="Teléfono" type="number" formControlName="phone"
+        [ngClass]="{focus:myForm.get('phone')?.hasError('required')&&myForm.get('phone')?.dirty,focusWarning:myForm.get('phone')?.hasError('minlength')}"
+        ><br>
+        <input placeholder="E-mail" type="email" formControlName='email'
+            [ngClass]="{focus:myForm.get('email')?.errors&& myForm.get('email')?.dirty}"
+        ><br>
+        <input placeholder="Contraseña" type="password" formControlName='password'
+        [ngClass]="{focus:myForm.get('password')?.hasError('required')&&myForm.get('password')?.dirty,focusWarning:myForm.get('password')?.hasError('minlength')}"
+        ><br>
+       
+        <input value="Crear Cuenta" type="submit" class="buttomSubmit" [disabled]="myForm.invalid"
+        [ngClass]="{buttomDisble:myForm.invalid}"
+        ><br>
+        
+    </form>
+</div>
+
+ 

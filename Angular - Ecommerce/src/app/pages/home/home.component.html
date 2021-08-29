@@ -1,0 +1,12 @@
+<div *ngFor="let item of fireproductos | async" class="supercaja">
+    <app-productos [data]="item" [loading]="loading"></app-productos>
+</div>
+<!--Jsonfy-->
+<!--<div *ngFor="let producto of productos">
+    <div>{{producto.id}}</div>
+    <div>{{producto.name}}</div>
+    <div>{{producto.price}}</div>
+    <div>{{producto.description}}</div>
+    <img src="{{producto.photo_url}}" width="200px">
+    <button routerLink="dproducto/{{producto.id}}">Ver Detalle</button>
+</div>-->

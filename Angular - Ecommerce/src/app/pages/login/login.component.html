@@ -1,0 +1,15 @@
+<div class="loginContenedor">
+    <form [formGroup]="myLoginForm" (ngSubmit)="login()">
+        <h1>Iniciar Sesión</h1>
+        <input placeholder="e-Mail" type="email" formControlName='email'
+        [ngClass]="{focus:myLoginForm.get('email')?.errors&& myLoginForm.get('email')?.dirty}" 
+        ><br>
+        <input placeholder="Contraseña" type="password" formControlName='password'
+        [ngClass]="{focus:myLoginForm.get('password')?.hasError('required')&&myLoginForm.get('password')?.dirty,focusWarning:myLoginForm.get('password')?.hasError('minlength')}"
+        ><br>
+        <input value="Login" type="submit" class="buttomSubmit" [disabled]="myLoginForm.invalid"
+        [ngClass]="{buttomDisble:myLoginForm.invalid}"
+        ><br>
+        <br><div class="errorAuth"></div>
+    </form>
+</div>

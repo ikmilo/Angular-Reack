@@ -1,0 +1,12 @@
+    <div class="caja"><!-- Contenedor Padre-->
+        <div class="cajaImg"><!-- Contenedor imagen-->
+            <img src="{{data?.img}}">
+        </div>
+        <div><!-- Contenedor texto-->
+            <div class="nameTitulo">{{data?.name}}</div>
+            <div class="priceTitulo">{{data?.price | currency}}</div>
+        </div>
+        <div><!-- Contenedor botones-->
+            <button routerLink="dproducto/{{data?.id}}" class="buttomSubmit">Ver Detalle</button>
+        </div>
+    </div>
